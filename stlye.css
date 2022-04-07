@@ -14,3 +14,18 @@ nav {
     justify-content:space-evenly;
     width:300px;
 }
+#ballH{
+    display:flex;
+    background-color: silver;
+    justify-content:center;
+    padding: 50px 0;
+}
+#ball{
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+    background-color: pink;
+}
+#team{
+    width:400px;
+}
