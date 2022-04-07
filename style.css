@@ -1,6 +1,7 @@
 * {
     margin:0;
     padding:0;
+    font-family: 'Rubik Moonrocks', cursive;
 }
 
 nav {
@@ -18,7 +19,6 @@ nav {
 #ballH{
     display:flex;
     background-color: silver;
-    justify-content:center;
     padding: 50px 0;
 }
 #ball{
@@ -26,6 +26,11 @@ nav {
     height:200px;
     border-radius: 50%;
     background-color: pink;
+    position: relative;
+    animation-name: leftright;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 #team{
     width:400px;
@@ -35,9 +40,15 @@ section {
     display:flex;
     justify-content:space-evenly;
     padding:50px 0;
+    line-height: 1.8;
 
 }
 
 #mission {
     width:800px;
 }
+
+@keyframes leftright{
+    from{left:calc(0% + 100px);}
+    to{left:calc(100% - 200px);}
+} 
