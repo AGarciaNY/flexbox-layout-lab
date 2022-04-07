@@ -37,18 +37,25 @@ nav {
 }
 
 section {
-    display:flex;
-    justify-content:space-evenly;
     padding:50px 0;
     line-height: 1.8;
-
+    display:flex;
+    justify-content:space-evenly;
 }
 
+@media (max-width: 800px) {
+    section {
+        display: block;
+    }
+}
 #mission {
-    width:800px;
+    margin: 30px;
 }
 
 @keyframes leftright{
-    from{left:calc(0% + 100px);}
-    to{left:calc(100% - 200px);}
+    from{left:calc(0% + 50px);}
+    to{left:calc(100% - 250px);}
 } 
+.space{
+    margin:20px;
+}
